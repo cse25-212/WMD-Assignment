@@ -81,3 +81,35 @@ main a[href^="mailto:"] {
   color: #ff5722;
   font-weight: bold;
 }
+/* Smooth transitions for a modern feel */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Tech style background grid */
+body {
+  background-image: linear-gradient(#e0e0e0 1px, transparent 1px),
+                    linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glow effect on header */
+header {
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
+/* Navigation hover effect */
+nav a:hover {
+  color: #00e5ff;
+}
+
+/* Image hover tech effect */
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #4CAF50;
+}
+
+/* Footer glow line */
+footer {
+  border-top: 2px solid #4CAF50;
+}
