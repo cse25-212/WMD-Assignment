@@ -30,3 +30,54 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Images Inside Main */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+}
+
+/* Links */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* All Images */
+img {
+  border: 5px solid #4CAF50;
+  border-radius: 10px;
+}
+
+/* Email Link Styling */
+main a[href^="mailto:"] {
+  color: #ff5722;
+  font-weight: bold;
+}
