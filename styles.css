@@ -90,13 +90,13 @@ img:hover {
 }
 
 .img-medium {
-    width: 250px;
-    height: auto;
+    width: 250px !important;
+    height: auto !important;
 }
 
 .img-large {
-    width: 400px;
-    height: auto;
+    width: 400px !important;
+    height: auto !important;
 }
 
 .img-center {
