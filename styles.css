@@ -82,6 +82,42 @@ img:hover {
 }
 
 /* =========================
+   IMAGE SIZE UTILITIES (ADDED)
+========================= */
+
+/* Small images */
+.img-small {
+    width: 120px;
+    height: auto;
+}
+
+/* Medium images */
+.img-medium {
+    width: 250px;
+    height: auto;
+}
+
+/* Large images */
+.img-large {
+    width: 400px;
+    height: auto;
+}
+
+/* Center images */
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive images */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* =========================
    BUTTONS
 ========================= */
 
