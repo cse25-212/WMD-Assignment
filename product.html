@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Product - Aptec Computers</title>
 
-    <!-- Custom CSS -->
+    <!-- Bootstrap FIRST -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS LAST -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-          rel="stylesheet">
 </head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <section class="container">
+        <a class="navbar-brand" href="index.html">Aptec Computers</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            </ul>
+        </section>
+    </section>
+</nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container my-5">
+
+    <!-- PAGE TITLE -->
+    <section class="text-center mb-4">
+        <h2>OUR PRODUCTS</h2>
+        <p>Explore high-quality computers and accessories from Aptec Computers</p>
+    </section>
+
+    <!-- SEARCH BOX -->
+    <section class="search-box">
+        CLICK TO SEARCH PRODUCTS
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section id="products">
+
+        <article class="product-item">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h5>LAPTOPS</h5>
+            <p>High performance laptops for school, work and gaming.</p>
+        </article>
+
+        <article class="product-item">
+            <img src="images/desktop.jpg" alt="Desktop">
+            <h5>DESKTOPS</h5>
+            <p>Powerful desktop computers for business and home use.</p>
+        </article>
+
+        <article class="product-item">
+            <img src="images/accessories.jpg" alt="Accessories">
+            <h5>ACCESSORIES</h5>
+            <p>Keyboards, mice, chargers and essential computer accessories.</p>
+        </article>
+
+    </section>
+
+    <!-- SLIDER SECTION -->
+    <section class="slider mt-5">
+
+        <section class="slider-box">
+            HP | DELL | LENOVO | ASUS BRANDS DISPLAY HERE
+        </section>
+
+        <nav class="arrows">
+            <span>⬅️</span>
+            <span>➡️</span>
+        </nav>
+
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Aptec Computers | Tshepang Segobaetso</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
