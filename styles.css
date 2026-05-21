@@ -1,13 +1,15 @@
 /* =========================
-   GLOBAL RESET + BASE STYLE
+   GLOBAL RESET
 ========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f9;
@@ -16,9 +18,8 @@ body {
 }
 
 /* =========================
-   NAVBAR (MODERN LOOK)
+   NAVBAR
 ========================= */
-
 .navbar {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -32,10 +33,8 @@ body {
     transition: 0.3s ease;
 }
 
-/* 🔵 CHANGED GREEN → BLUE */
 .nav-link:hover {
     color: #1e88e5 !important;
-    transform: translateY(-1px);
 }
 
 .nav-link.active {
@@ -44,9 +43,8 @@ body {
 }
 
 /* =========================
-   MAIN CONTAINER
+   MAIN
 ========================= */
-
 main {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -55,23 +53,25 @@ main {
 /* =========================
    HEADINGS
 ========================= */
-
 h1, h2, h3, h4, h5 {
     color: #222;
-    margin-bottom: 10px;
-}
-
-/* 🔵 BLUE ACCENT LINE */
-h2 {
-    border-left: 5px solid #1e88e5;
-    padding-left: 10px;
-    margin-bottom: 20px;
 }
 
 /* =========================
-   IMAGES
+   BUTTONS
 ========================= */
+.btn-primary {
+    background-color: #1e88e5;
+    border: none;
+}
 
+.btn-primary:hover {
+    background-color: #1565c0;
+}
+
+/* =========================
+   IMAGES (GLOBAL)
+========================= */
 img {
     border-radius: 10px;
     transition: 0.3s ease;
@@ -82,89 +82,55 @@ img:hover {
 }
 
 /* =========================
-   IMAGE SIZE UTILITIES (ADDED)
+   IMAGE SIZES (SAFE)
 ========================= */
-
-/* Small images */
 .img-small {
-    width: 120px;
-    height: auto;
+    width: 120px !important;
+    height: auto !important;
 }
 
-/* Medium images */
 .img-medium {
     width: 250px;
     height: auto;
 }
 
-/* Large images */
 .img-large {
     width: 400px;
     height: auto;
 }
 
-/* Center images */
 .img-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Responsive images */
-.img-responsive {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 /* =========================
-   BUTTONS
+   PRODUCT PAGE GRID (FIX)
 ========================= */
-
-.btn-primary {
-    background-color: #1e88e5;
-    border: none;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #1565c0;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.card {
-    border: none;
-    border-radius: 12px;
-    transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* =========================
-   PRODUCT PAGE
-========================= */
-
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 20px;
 }
 
+/* responsive */
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   PRODUCT ITEMS
+========================= */
 .product-item {
     background: white;
-    border-radius: 12px;
     padding: 15px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .product-item:hover {
@@ -172,23 +138,17 @@ img:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+/* FIX IMAGE ISSUE */
 .product-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* 🔵 PRODUCT SELECTED STATE */
-.product-item.selected {
-    border: 3px solid #1e88e5;
-    transform: scale(1.03);
+    width: 120px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
 }
 
 /* =========================
    SEARCH BOX
 ========================= */
-
 .search-box {
     background: #1e88e5;
     color: white;
@@ -196,7 +156,7 @@ img:hover {
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
 .search-box:hover {
@@ -206,97 +166,36 @@ img:hover {
 /* =========================
    SLIDER
 ========================= */
-
 .slider {
     text-align: center;
     margin-top: 20px;
 }
 
 .slider-box {
-    background: white;
+    background: #eee;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
 }
 
 .arrows span {
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
     margin: 0 10px;
-    transition: 0.3s;
-}
-
-.arrows span:hover {
-    color: #1e88e5;
 }
 
 /* =========================
    CONTACT PAGE
 ========================= */
-
 #contact {
     background: white;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    margin-top: 20px;
-}
-
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-#contact button {
-    background: #1e88e5;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-}
-
-#contact button:hover {
-    background: #1565c0;
-}
-
-/* =========================
-   SERVICES PAGE
-========================= */
-
-section ul {
-    margin-left: 20px;
-}
-
-section ul li {
-    margin-bottom: 8px;
+    border-radius: 10px;
 }
 
 /* =========================
    FOOTER
 ========================= */
-
 footer {
     margin-top: 40px;
     font-size: 14px;
-}
-
-/* =========================
-   RESPONSIVE FIX
-========================= */
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    .slider-box {
-        font-size: 14px;
-    }
 }
