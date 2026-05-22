@@ -3,39 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Laptops</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+<nav class="navbar navbar-dark bg-dark">
+<section class="container">
+<a class="navbar-brand" href="index.html">Aptec Computers</a>
+<a href="cart.html">🛒 Cart</a>
+</section>
+</nav>
+
+<main class="container mt-4">
 
 <h2>Laptops</h2>
 
 <section id="products">
 
 <article class="product-item">
-    <h3>HP Pavilion</h3>
-    <p>8GB RAM | 512GB SSD</p>
-    <p>$700</p>
-    <button onclick="addToCart('HP Pavilion',700)">Add to Cart</button>
+<h3>HP Pavilion</h3>
+<img src="images/hp.jpg" alt="Add HP image" class="img-medium">
+<p>8GB RAM | 512GB SSD</p>
+<p>$700</p>
+<button onclick="addToCart('HP Pavilion',700)">Add to Cart</button>
 </article>
 
 <article class="product-item">
-    <h3>Dell Inspiron</h3>
-    <p>16GB RAM | 1TB SSD</p>
-    <p>$900</p>
-    <button onclick="addToCart('Dell Inspiron',900)">Add to Cart</button>
-</article>
-
-<article class="product-item">
-    <h3>Lenovo ThinkPad</h3>
-    <p>8GB RAM | 256GB SSD</p>
-    <p>$650</p>
-    <button onclick="addToCart('Lenovo ThinkPad',650)">Add to Cart</button>
+<h3>Dell Inspiron</h3>
+<img src="images/dell.jpg" alt="Add Dell image" class="img-medium">
+<p>16GB RAM | 1TB SSD</p>
+<p>$900</p>
+<button onclick="addToCart('Dell Inspiron',900)">Add to Cart</button>
 </article>
 
 </section>
 
-<script src="script.js"></script>
+</main>
 
+<script src="script.js"></script>
 </body>
 </html>
