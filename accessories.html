@@ -4,32 +4,45 @@
 <meta charset="UTF-8">
 <title>Accessories</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+<nav class="navbar navbar-dark bg-dark">
+<section class="container">
+<a class="navbar-brand" href="index.html">Aptec Computers</a>
+<a href="cart.html">🛒 Cart</a>
+</section>
+</nav>
+
+<main class="container mt-4">
 
 <h2>Accessories</h2>
 
 <section id="products">
 
 <article class="product-item">
-    <h3>Wireless Mouse</h3>
-    <p>Ergonomic | USB</p>
-    <p>$25</p>
-    <button onclick="addToCart('Mouse',25)">Add to Cart</button>
+<h3>Mouse</h3>
+<img src="images/mouse.jpg" alt="Add mouse image" class="img-small">
+<p>Wireless</p>
+<p>$25</p>
+<button onclick="addToCart('Mouse',25)">Add to Cart</button>
 </article>
 
 <article class="product-item">
-    <h3>Mechanical Keyboard</h3>
-    <p>RGB | Gaming</p>
-    <p>$80</p>
-    <button onclick="addToCart('Keyboard',80)">Add to Cart</button>
+<h3>Keyboard</h3>
+<img src="images/keyboard.jpg" alt="Add keyboard image" class="img-small">
+<p>RGB Mechanical</p>
+<p>$80</p>
+<button onclick="addToCart('Keyboard',80)">Add to Cart</button>
 </article>
 
 </section>
 
-<script src="script.js"></script>
+</main>
 
+<script src="script.js"></script>
 </body>
 </html>
