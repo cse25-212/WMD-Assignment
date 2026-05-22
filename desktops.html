@@ -4,32 +4,37 @@
 <meta charset="UTF-8">
 <title>Desktops</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+<nav class="navbar navbar-dark bg-dark">
+<section class="container">
+<a class="navbar-brand" href="index.html">Aptec Computers</a>
+<a href="cart.html">🛒 Cart</a>
+</section>
+</nav>
+
+<main class="container mt-4">
 
 <h2>Desktops</h2>
 
 <section id="products">
 
 <article class="product-item">
-    <h3>Gaming PC</h3>
-    <p>16GB RAM | RTX 3060</p>
-    <p>$1200</p>
-    <button onclick="addToCart('Gaming PC',1200)">Add to Cart</button>
-</article>
-
-<article class="product-item">
-    <h3>Office Desktop</h3>
-    <p>8GB RAM | 512GB SSD</p>
-    <p>$500</p>
-    <button onclick="addToCart('Office Desktop',500)">Add to Cart</button>
+<h3>Gaming PC</h3>
+<img src="images/gamingpc.jpg" alt="Add gaming PC image" class="img-medium">
+<p>16GB RAM | RTX 3060</p>
+<p>$1200</p>
+<button onclick="addToCart('Gaming PC',1200)">Add to Cart</button>
 </article>
 
 </section>
 
-<script src="script.js"></script>
+</main>
 
+<script src="script.js"></script>
 </body>
 </html>
