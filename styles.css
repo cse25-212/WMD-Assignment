@@ -268,12 +268,11 @@ img {
 /* your existing CSS above */
 
 
-/* ================= CLICK EFFECT ================= */
 #products a {
-    display: block;
+    display: block !important;
 }
 
 #products a:hover .product-item {
-    transform: scale(1.03);
+    transform: scale(1.03) !important;
     transition: 0.3s;
 }
