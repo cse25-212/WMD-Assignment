@@ -265,3 +265,15 @@ img {
         width: 180px;
     }
 }
+/* your existing CSS above */
+
+
+/* ================= CLICK EFFECT ================= */
+#products a {
+    display: block;
+}
+
+#products a:hover .product-item {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
