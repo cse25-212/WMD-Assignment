@@ -1,87 +1,116 @@
-<section id="laptop-products">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- LAPTOP 1 -->
-    <article class="product-item">
-        <img src="images/laptop1.jpg" alt="HP Laptop" class="img-medium">
-        <h5>HP Pavilion 15</h5>
-        <p>Powerful and reliable for everyday use.</p>
-        <ul>
-            <li><strong>CPU:</strong> Intel Core i5 12th Gen</li>
-            <li><strong>RAM:</strong> 8GB DDR4</li>
-            <li><strong>Storage:</strong> 512GB SSD</li>
-            <li><strong>Graphics:</strong> Intel Iris Xe</li>
-            <li><strong>Price:</strong> P8,999</li>
-        </ul>
-    </article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Aptec Computers</title>
 
-    <!-- LAPTOP 2 -->
-    <article class="product-item">
-        <img src="images/laptop2.jpg" alt="Dell Laptop" class="img-medium">
-        <h5>Dell Inspiron 14</h5>
-        <p>Compact and efficient for students and professionals.</p>
-        <ul>
-            <li><strong>CPU:</strong> Intel Core i7 11th Gen</li>
-            <li><strong>RAM:</strong> 16GB DDR4</li>
-            <li><strong>Storage:</strong> 512GB SSD</li>
-            <li><strong>Graphics:</strong> Intel Iris Xe</li>
-            <li><strong>Price:</strong> P11,500</li>
-        </ul>
-    </article>
+    <!-- Bootstrap FIRST -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- LAPTOP 3 -->
-    <article class="product-item">
-        <img src="images/laptop3.jpg" alt="Lenovo Laptop" class="img-medium">
-        <h5>Lenovo IdeaPad 3</h5>
-        <p>Affordable laptop for everyday computing.</p>
-        <ul>
-            <li><strong>CPU:</strong> AMD Ryzen 5</li>
-            <li><strong>RAM:</strong> 8GB</li>
-            <li><strong>Storage:</strong> 256GB SSD</li>
-            <li><strong>Graphics:</strong> AMD Radeon Graphics</li>
-            <li><strong>Price:</strong> P7,500</li>
-        </ul>
-    </article>
+    <!-- Your CSS LAST -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <!-- LAPTOP 4 -->
-    <article class="product-item">
-        <img src="images/laptop4.jpg" alt="Asus Laptop" class="img-medium">
-        <h5>ASUS VivoBook 15</h5>
-        <p>Sleek design with strong performance.</p>
-        <ul>
-            <li><strong>CPU:</strong> Intel Core i5 11th Gen</li>
-            <li><strong>RAM:</strong> 8GB</li>
-            <li><strong>Storage:</strong> 512GB SSD</li>
-            <li><strong>Graphics:</strong> Intel UHD Graphics</li>
-            <li><strong>Price:</strong> P9,200</li>
-        </ul>
-    </article>
+<body>
 
-    <!-- LAPTOP 5 -->
-    <article class="product-item">
-        <img src="images/laptop5.jpg" alt="Gaming Laptop" class="img-medium">
-        <h5>Acer Nitro 5</h5>
-        <p>High-performance gaming laptop.</p>
-        <ul>
-            <li><strong>CPU:</strong> Intel Core i7 12th Gen</li>
-            <li><strong>RAM:</strong> 16GB</li>
-            <li><strong>Storage:</strong> 1TB SSD</li>
-            <li><strong>Graphics:</strong> NVIDIA RTX 3050</li>
-            <li><strong>Price:</strong> P18,000</li>
-        </ul>
-    </article>
+<!-- ================= NAVBAR ================= -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <section class="container">
+        <a class="navbar-brand" href="index.html">Aptec Computers</a>
 
-    <!-- LAPTOP 6 -->
-    <article class="product-item">
-        <img src="images/laptop6.jpg" alt="MacBook" class="img-medium">
-        <h5>Apple MacBook Air M2</h5>
-        <p>Premium laptop with powerful performance.</p>
-        <ul>
-            <li><strong>CPU:</strong> Apple M2 Chip</li>
-            <li><strong>RAM:</strong> 8GB</li>
-            <li><strong>Storage:</strong> 256GB SSD</li>
-            <li><strong>Graphics:</strong> Integrated 8-core GPU</li>
-            <li><strong>Price:</strong> P20,500</li>
-        </ul>
-    </article>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-</section>
+        <section class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            </ul>
+        </section>
+    </section>
+</nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container my-5">
+
+    <!-- PAGE TITLE -->
+    <section class="text-center mb-4">
+        <h2>OUR PRODUCTS</h2>
+        <p>Explore high-quality computers and accessories from Aptec Computers</p>
+    </section>
+
+    <!-- SEARCH BOX -->
+    <section class="search-box">
+        CLICK TO SEARCH PRODUCTS
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section id="products">
+
+        <!-- LAPTOPS -->
+        <a href="laptops.html" class="text-decoration-none text-dark">
+            <article class="product-item">
+                <img src="images/13-laptop-platinum-right-render-fy25_VP4-1260x795.avif" alt="Laptop" class="img-medium">
+                <h5>LAPTOPS</h5>
+                <p>High performance laptops for school, work and gaming.</p>
+            </article>
+        </a>
+
+        <!-- DESKTOPS -->
+        <a href="desktops.html" class="text-decoration-none text-dark">
+            <article class="product-item">
+                <img src="images/MSFT-All-in-One_1040x585.avif" alt="Desktop" class="img-medium">
+                <h5>DESKTOPS</h5>
+                <p>Powerful desktop computers for business and home use.</p>
+            </article>
+        </a>
+
+        <!-- ACCESSORIES -->
+        <a href="accessories.html" class="text-decoration-none text-dark">
+            <article class="product-item">
+                <img src="images/computer-accessories-icons-black-peripheral-set-isolated-vector-illustration-44536339.webp" alt="Accessories" class="img-medium">
+                <h5>ACCESSORIES</h5>
+                <p>Keyboards, mice, chargers and essential computer accessories.</p>
+            </article>
+        </a>
+
+    </section>
+
+    <!-- SLIDER SECTION -->
+    <section class="slider mt-5">
+
+        <section class="slider-box">
+            HP | DELL | LENOVO | ASUS BRANDS DISPLAY HERE
+        </section>
+
+        <nav class="arrows">
+            <span>⬅️</span>
+            <span>➡️</span>
+        </nav>
+
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Aptec Computers | Tshepang Segobaetso</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html
