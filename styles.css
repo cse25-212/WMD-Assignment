@@ -276,3 +276,38 @@ img {
     transform: scale(1.03) !important;
     transition: 0.3s;
 }
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
