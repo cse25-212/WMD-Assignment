@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Accessories</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,35 +14,38 @@
 <nav class="navbar navbar-dark bg-dark">
 <section class="container">
 <a class="navbar-brand" href="index.html">Aptec Computers</a>
-<a href="cart.html">🛒 Cart</a>
+<a href="cart.html" class="text-white">🛒 Cart</a>
 </section>
 </nav>
 
 <main class="container mt-4">
 
-<h2>Accessories</h2>
+<h2 class="text-center mb-4">Accessories</h2>
 
-<section id="products">
+<section id="products" class="row g-4">
 
-<article class="product-item">
+<!-- Mouse -->
+<article class="product-item col-12 col-md-6 col-lg-4">
 <h3>Mouse</h3>
-<img src="images/Mouse.png" alt="Add mouse image" class="img-medium">
+<img src="images/Mouse.png" alt="Mouse" class="img-medium img-fluid">
 <p>Cord</p>
 <p>P 338.73</p>
 <button onclick="addToCart('Mouse',338.73)">Add to Cart</button>
 </article>
 
-<article class="product-item">
+<!-- Keyboard -->
+<article class="product-item col-12 col-md-6 col-lg-4">
 <h3>Keyboard</h3>
-<img src="images/Keyboard.avif" alt="Add keyboard image" class="img-medium">
+<img src="images/Keyboard.avif" alt="Keyboard" class="img-medium img-fluid">
 <p>RGB Mechanical</p>
 <p>P 1083.95</p>
 <button onclick="addToCart('Keyboard',1083.95)">Add to Cart</button>
 </article>
 
-<article class="product-item">
+<!-- Headsets -->
+<article class="product-item col-12 col-md-6 col-lg-4">
 <h3>Headsets</h3>
-<img src="images/Headsets.webp" alt="Add headsets image" class="img-medium">
+<img src="images/Headsets.webp" alt="Headsets" class="img-medium img-fluid">
 <p>Bluetooth connectivity</p>
 <p>P 559.95</p>
 <button onclick="addToCart('Headsets',559.95)">Add to Cart</button>
