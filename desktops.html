@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Desktops</title>
+    <meta charset="UTF-8">
+    <title>Desktops</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <nav class="navbar navbar-dark bg-dark">
-<section class="container">
-<a class="navbar-brand" href="index.html">Aptec Computers</a>
-<a href="cart.html" class="text-white">🛒 Cart</a>
-</section>
+    <section class="container">
+        <a class="navbar-brand" href="index.html">Aptec Computers</a>
+        <a href="cart.html">🛒 Cart</a>
+    </section>
 </nav>
 
 <main class="container mt-4">
 
-<h2 class="text-center mb-4">Desktops</h2>
+    <h2>Desktops</h2>
 
-<section id="products" class="row g-4">
+    <section id="products">
 
-<!-- Gaming PC -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>Gaming PC</h3>
-<img src="images/Gaming PC.webp" alt="Gaming PC" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> Intel Core i7 12th Gen | <strong>Storage:</strong> 1TB SSD | <strong>Cooling:</strong> RGB Air Cooling</p>
-<p>P 16,259.21</p>
-<button onclick="addToCart('Gaming PC',16259.21)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3>Gaming PC</h3>
+            <img src="images/Gaming PC.webp" alt="Add gaming PC image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> Intel Core i7 12th Gen | <strong>Storage:</strong> 1TB SSD | <strong>Cooling:</strong> RGB Air Cooling</p>
+            <p>P 16,259.21</p>
+            <button onclick="addToCart('Gaming PC',16259.21)">Add to Cart</button>
+        </article>
 
-<!-- Windows Desktop -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>Windows 11 Desktop</h3>
-<img src="images/Windows 11 Desktop.webp" alt="Windows Desktop" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> Intel Core i5 11th Gen | <strong>Storage:</strong> 512GB SSD | <strong>OS:</strong> Windows 11</p>
-<p>P 6,774.67</p>
-<button onclick="addToCart('Windows 11 Desktop',6774.67)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3>Windows 11 Desktop</h3>
+            <img src="images/Windows 11 Desktop.webp" alt="Add Windows 11 Desktop image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> Intel Core i5 11th Gen | <strong>Storage:</strong> 512GB SSD | <strong>OS:</strong> Windows 11</p>
+            <p>P 6,774.67</p>
+            <button onclick="addToCart('Windows 11 Desktop',6774.67)">Add to Cart</button>
+        </article>
 
-<!-- iMac -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>Apple iMac 21 Desktop</h3>
-<img src="images/Apple iMac 21 Desktop.jpg" alt="Apple iMac" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> Apple M1 Chip | <strong>Storage:</strong> 512GB SSD | <strong>Display:</strong> 21.5" Retina 4K</p>
-<p>P 12,900.84</p>
-<button onclick="addToCart('Apple iMac 21 Desktop',12900.84)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3>Apple iMac 21 Desktop</h3>
+            <img src="images/Apple iMac 21 Desktop.jpg" alt="Add Apple iMac 21 Desktop image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> Apple M1 Chip | <strong>Storage:</strong> 512GB SSD | <strong>Display:</strong> 21.5" Retina 4K</p>
+            <p>P 12,900.84</p>
+            <button onclick="addToCart('Apple iMac 21 Desktop',12900.84)">Add to Cart</button>
+        </article>
 
-<!-- Acer -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>Acer Desktop</h3>
-<img src="images/Acer Desktop.avif" alt="Acer Desktop" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> Intel Core i5 10th Gen | <strong>Storage:</strong> 1TB HDD + 256GB SSD | <strong>Graphics:</strong> NVIDIA GTX 1660</p>
-<p>P 12,900.84</p>
-<button onclick="addToCart('Acer Desktop',12900.84)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3>Acer Desktop</h3>
+            <img src="images/Acer Desktop.avif" alt="Add Acer Desktop image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> Intel Core i5 10th Gen | <strong>Storage:</strong> 1TB HDD + 256GB SSD | <strong>Graphics:</strong> NVIDIA GTX 1660</p>
+            <p>P 12,900.84</p>
+            <button onclick="addToCart('Acer Desktop',12900.84)">Add to Cart</button>
+        </article>
 
-<!-- Dell -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>Dell Desktop</h3>
-<img src="images/Dell Desktop.jpeg" alt="Dell Desktop" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> Intel Core i7 11th Gen | <strong>Storage:</strong> 1TB SSD | <strong>Graphics:</strong> NVIDIA RTX 3050</p>
-<p>P 12,900.84</p>
-<button onclick="addToCart('Dell Desktop',12900.84)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3> Dell Desktop</h3>
+            <img src="images/Dell Desktop.jpeg" alt="Add Dell Desktop image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> Intel Core i7 11th Gen | <strong>Storage:</strong> 1TB SSD | <strong>Graphics:</strong> NVIDIA RTX 3050</p>
+            <p>P 12,900.84</p>
+            <button onclick="addToCart('Dell Desktop',12900.84)">Add to Cart</button>
+        </article>
 
-<!-- ASUS -->
-<article class="product-item col-12 col-md-6 col-lg-4">
-<h3>ASUS Desktop</h3>
-<img src="images/ASUS Desktop.jpg" alt="ASUS Desktop" class="img-medium img-fluid">
-<p>16GB RAM | RTX 3060</p>
-<p><strong>CPU:</strong> AMD Ryzen 7 | <strong>Storage:</strong> 1TB SSD | <strong>Graphics:</strong> NVIDIA RTX 3060</p>
-<p>P 12,900.84</p>
-<button onclick="addToCart('ASUS Desktop',12900.84)">Add to Cart</button>
-</article>
+        <article class="product-item">
+            <h3> ASUS Desktop</h3>
+            <img src="images/ASUS Desktop.jpg" alt="Add ASUS Desktop image" class="img-medium">
+            <p>16GB RAM | RTX 3060</p>
+            <p><strong>CPU:</strong> AMD Ryzen 7 | <strong>Storage:</strong> 1TB SSD | <strong>Graphics:</strong> NVIDIA RTX 3060</p>
+            <p>P 12,900.84</p>
+            <button onclick="addToCart('ASUS Desktop',12900.84)">Add to Cart</button>
+        </article>
 
-</section>
+    </section>
 
 </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
