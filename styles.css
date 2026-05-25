@@ -199,3 +199,116 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+
+/* ================= MOBILE FIXES ================= */
+
+/* Make images fully responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix product images scaling */
+.img-small {
+    width: 80px;
+}
+
+.img-medium {
+    width: 150px;
+}
+
+.img-large {
+    width: 220px;
+}
+
+/* Make product sections stack nicely on small screens */
+@media (max-width: 768px) {
+
+    /* Center all text */
+    h1, h4, h5, h6, p {
+        text-align: center;
+    }
+
+    /* Add spacing between stacked items */
+    .product-item {
+        margin-bottom: 20px;
+    }
+
+    /* Reduce hero text size */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Add spacing for buttons */
+    .btn {
+        margin: 5px;
+        width: 100%;
+    }
+
+    /* Ensure navbar items don't overflow */
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .img-medium {
+        width: 120px;
+    }
+
+    .img-large {
+        width: 180px;
+    }
+}
+/* your existing CSS above */
+
+
+#products a {
+    display: block !important;
+}
+
+#products a:hover .product-item {
+    transform: scale(1.03) !important;
+    transition: 0.3s;
+}
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
