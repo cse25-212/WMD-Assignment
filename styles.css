@@ -82,7 +82,7 @@ img:hover {
 }
 
 /* =========================
-   IMAGE SIZES (SAFE)
+   IMAGE SIZES (CLASSES)
 ========================= */
 .img-small {
     width: 190px !important;
@@ -138,7 +138,7 @@ img:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* FIX IMAGE ISSUE */
+/* IMAGE ISSUE */
 .product-item img {
     width: 120px;
     height: auto;
@@ -266,7 +266,7 @@ img {
         width: 180px;
     }
 }
-/* your existing CSS above */
+/* existing CSS */
 
 
 #products a {
